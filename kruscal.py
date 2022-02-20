@@ -92,13 +92,13 @@ class Graph2:
             print("%d -- %d == %d" % (u, v, weight))
         print("Minimum Spanning Tree" , minimumCost)
 
-def kruscal_tree(G: nx.Graph)->int:
+def kruscal_tree(nx_G: nx.Graph)->int:
     """
     transforms input from graph generator into
     readable input for the program and does the job
     """
-    G = list(G.edges(data = True))
-    NODES = G.nodes()
+    G = list(nx_G.edges(data = True))
+    NODES = nx_G.nodes()
     V = len(NODES)
     g = Graph2(V)
     for x, y, z in G:
