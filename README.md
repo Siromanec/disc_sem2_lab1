@@ -4,8 +4,8 @@ matplotlib
 networkx
 # usage
 ``` python
-import prim
+import cruscal
 # returns edges and min weight
 # G  - networx.Graph()
-prim.prim_tree(G)
+prim.kruskal_algorithm(G)
 ```
